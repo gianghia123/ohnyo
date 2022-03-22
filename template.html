@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
         html {
@@ -39,6 +42,47 @@
         .blank {
             text-align: center;
         }
+
+        .btn-group {
+            position: fixed;
+            bottom: 16px;
+            right: 20px;
+        }
+
+        .btn-group .button {
+            background-color: rgb(229, 255, 253);
+            border: 1px solid rgb(128, 128, 128);
+            border-radius: 3px;
+            color: rgb(0, 0, 0);
+            padding: 16px 20px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 400;
+            cursor: pointer;
+            display: block;
+        }
+
+        .btn-group .button:not(:last-child) {
+          border-bottom: none; /* Prevent double borders */
+        }
+
+        .btn-group .button .fi {
+            font-size: large;
+            transition: color 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+
+        .btn-group .button .fi:hover {
+          color: #42C2FF;
+        }
+        
+        a:visited {
+            color:rgb(0, 0, 0);
+        }
+
+        #indexnull {
+            color:rgb(70, 69, 69)
+        }
     </style>
     
     <head>
@@ -52,8 +96,14 @@
     </head>
     
     <body>
+        <!Content here. Use p tags with class "content">
         <br>
         <hr class="hr">
+        <div class="btn-group">
+            <button class="button"><a href=""><i class="fi fi-rr-angle-left"></i></a></button>
+            <button class="button"><a href="../index.html"><i class="fi fi-rr-home"></i></a></button>
+            <button class="button"><a href="chapter2.html"><i class="fi fi-rr-angle-right"></i></a></button>
+        </div>
     </body>
     
     <script>
