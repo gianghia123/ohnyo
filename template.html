@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+        html {
+            background-color: rgb(39, 39, 39);
+            font-family: 'Nunito', sans-serif;
+        }
+        
+        .hr {
+            margin: 0% 20% 0% 20%;
+        }
+        
+        .index{
+            text-align: center;
+            color: antiquewhite;
+        }
+
+        .header {
+            position: static;
+            text-align: center;
+            color: antiquewhite;
+        }
+        
+        .content {
+            position: static;
+            margin: 3% 20% 0% 20%;
+            white-space: normal;
+            font-size: 17px;
+            text-indent: 20px;
+            text-align: justify;
+            color: antiquewhite;
+        }
+        
+        .removed {
+            background-color: rgb(255, 0, 0);
+        }
+        
+        .blank {
+            text-align: center;
+        }
+    </style>
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <h1 class="header">Harry Potter và Hòn đá Phù Thủy</h1>
+        <h3 class="header">Chương 1: Đứa bé còn sống</h3>
+        <h4 class="index"></h4>
+        <hr class="hr">
+    </head>
+    
+    <body>
+        <br>
+        <hr class="hr">
+    </body>
+    
+    <script>
+        let fun = document.getElementsByClassName("content");
+        let index = document.getElementsByClassName("index");
+        let result = 0;
+        let textresult = []
+        for (let i = 0; i < fun.length; i++){
+            let text = fun[i].innerHTML.split(' ');
+            result += text.length;
+            textresult.push(text)
+        }
+        index[0].innerHTML = "Số từ: " + result + " từ";
+    </script>
+
+</html>
